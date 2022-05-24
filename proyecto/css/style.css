@@ -16,11 +16,11 @@ img {
 }
 
 nav {
-    display: flex;
+    
     position: absolute;
     top: 100px;
     right: 50px;
-    bottom: 0;
+    bottom: 10px;
 }
 
 nav li {
@@ -34,6 +34,12 @@ nav a {
     font-weight: bold;
     font-size: 17px;
     text-decoration: none;
+    
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
 }
 
 main {
@@ -51,6 +57,7 @@ main {
 } 
 
 .prod li {
+    
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -59,17 +66,26 @@ main {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
+    border-radius: 83px;
+    background: linear-gradient(45deg, #cacaca, #f0f0f0);
+    box-shadow:  5px -5px 10px #6e6e6e,
+                -5px 5px 10px #ffffff;
     
 }
 
 .prod h2 {
     font-size: 25px;
     font-weight: bold;
-
+    
 }
 
 .detalle {
     font-size: 15px;
     margin-top: 10px;
+}
+
+.prod img {
+    width: 300px;
+    height: 300px;
 }
 
