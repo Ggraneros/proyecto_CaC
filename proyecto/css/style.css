@@ -1,26 +1,26 @@
 header {
-    background-color: #bbbbbb;    
     height: 120px;
     background-color: #BBBBBB;
- 
 }
 
-.head {
+.head_1 {
     width: 100%;
-    height: 150px;
-    
+    height: 120px;
+    margin: auto;
 }
 
 img {
-    height: 150px;
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
 }
 
 nav {
+    display: flex;
     position: absolute;
     top: 100px;
     right: 50px;
     bottom: 0;
-
 }
 
 nav li {
@@ -35,3 +35,41 @@ nav a {
     font-size: 17px;
     text-decoration: none;
 }
+
+main {
+    display: flex;
+    width: 100%;
+}
+.prod{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    
+} 
+
+.prod li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background-color: #BBBBBB;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    
+}
+
+.prod h2 {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.detalle {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
