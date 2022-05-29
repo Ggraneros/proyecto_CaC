@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
     background-size: cover;   
     user-select: none;
+    box-sizing: border-box;
 }
 
 header {
@@ -109,6 +110,7 @@ nav a {
     color: aliceblue;
     margin: 100px 0;
     padding: 40px 0;
+    box-sizing: border-box;
     
     
 }

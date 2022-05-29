@@ -109,37 +109,10 @@ main {
 
 }
 
-form {
-    margin: 40px 0;
-}
-
-.contact_banner {
-    width: 100%;
-    height: 400px;
-    background-color: #002e4b;
-    color: aliceblue;
-    
-}
-
-.desple {
-    margin-bottom: 40px;
-
-}
-
-.desple p { 
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 12px;
 
 
-}
 
-.contac {
-    height: 131px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    
-}
+
 
 .css-button-gradient--5 {
     width: 40%;
@@ -170,41 +143,11 @@ form {
     top: 2px;
   }
 
-.comm_banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #002e4b;
-    color: aliceblue;
-    display: flex;
-    width: 1240px;
-    height: 100px;
-    justify-content: center;
-    font-size: 50px;
-    padding: 28px 60px;
-    margin: 30px 0;
-    margin-left: -210px;
-}
-
-form label {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.padre {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-}
-
-
 
 footer {
     width: 100%;
     height: 150px;
     background-color: #23c483;
-    text-decoration: none;
 }
 
 
@@ -227,7 +170,7 @@ footer {
     
     float: right;
     margin-top: -95px;
-    margin-right: 40px;   
+    margin-right: 40px;
 }
 
 .redes a img {
@@ -240,12 +183,11 @@ footer {
 .redes a img:hover {
     transform: scale(1.7);
 }
+
 .derechos {
     width: 100%;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    text-decoration: none;
 }
-
