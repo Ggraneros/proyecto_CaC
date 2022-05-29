@@ -47,13 +47,13 @@
         <form action="" class="formu"> 
             
             <label for="nombre">Nombre y apellido </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Juán Pérez" class="padre" style="text-align: center;">
+            <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Juán Pérez" class="padre" style="text-align: center;" required>
 
             <label for="cElec">Correo electrónico</label>
-            <input type="text" name="cElec" id="cElec" placeholder=" Ejemplo@ejemplo.com" class="padre" style="text-align: center;">
+            <input type="email" name="cElec" id="cElec" placeholder=" Ejemplo@ejemplo.com" class="padre" style="text-align: center;" required>
 
             <label for="telef">Teléfono</label>
-            <input type="text" name="telef" id="telef" placeholder=" Código + Número" class="padre" style="text-align: center;">
+            <input type="tel" name="telef" id="telef" placeholder=" Código + Número" class="padre" style="text-align: center;" required>
             
             
             <label for="comments">¿Comentarios?¿Sugerencias?</label>
@@ -87,8 +87,19 @@
             </div>
             
 
+            <div class="desple">
+
+                <p>¿En que momento del día te gustaría que nos comunicaramos con vos?</p>
+                <br>
+                <select name="dropp" id="dropp">
+                    <option value="morn">Mañana</option>
+                    <option value="noon">Tarde</option>
+                    <option value="night">Noche</option>
+                </select>
+
+            </div>
             
-            
+            <br>
             <input class="css-button-gradient--5" type="submit" value="Enviar">
         
         
@@ -122,7 +133,8 @@
 
         </div>
 
-        <p class="derechos">&copy; Copyright <a href="mailto:in.byte.me87@gmail.com"> Vagrant</a> - 2022</p>
+        <p class="derechos">&copy Copyright <a href="mailto:in.byte.me87@gmail.com"> Vagrant - 2022</a> </p>
+        
 
     </footer>
 </body>
