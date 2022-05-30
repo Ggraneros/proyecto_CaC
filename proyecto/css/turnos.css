@@ -94,10 +94,10 @@ nav a {
     justify-content: center;
     align-items: center;
     width: 1360px;
-    height: 152px;
+    height: 70px;
     background-color: #002e4b;
     margin-top: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
     padding: 40px 0;
     margin-left: 0px;
 }
@@ -112,6 +112,7 @@ nav a {
 
 fieldset {
     margin-left: 80px;
+    margin-bottom: 80px;
 }
 
 .formulario {
@@ -165,27 +166,37 @@ fieldset {
     bottom: 15px;
     z-index: 100;
     font-size: 16px;
-    opacity: 0;
+    /**opacity: 0;**/
 }
 
-.formulario__checkbox {
-    margin-right: 10px;
-}
-
-.formulario__grupo-terminos 
-/**.formulario__mensaje, 
-.formulario__btn-enviar**/ {
+.formulario__mensaje, 
+.formulario__grupo-btn-enviar {
     grid-column: span 2;
 }
 
-/**main { 
-    width: 1360px;
-    margin: 0 auto;
-}**/
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
 
+.formulario__mensaje-activo { 
+    display: block;
+}
 
+.formulario__mensaje p {
+    margin: 0;
+}
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.css-button-gradient--5 {
+.formulario__btn {
     width: 40%;
     padding: 15px 0;
     
@@ -204,16 +215,26 @@ fieldset {
     background-size: 120% auto;
     background-image: linear-gradient(315deg, #000428 0%, #004e92 75%);
     cursor: pointer;
-  }
-
-  .css-button-gradient--5:hover {
-    background-position: right center;
-  
+    margin-top: 30px;
 }
-  .css-button-gradient--5:active {
-    top: 2px;
-  }
 
+.formulario__btn:hover {
+    background-position: right center;
+}
+
+.formulario__btn:active {
+    top: 2px;
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #000000;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
 
 footer {
     width: 100%;

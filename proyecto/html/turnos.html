@@ -43,7 +43,7 @@
         <form action="" class="formulario" id="formulario">
             
             <!--Grupo Nombre y apellido-->
-            <div class="formulario_grupo" id="grupo_nombre">
+            <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="formulario__label">Nombre y Apellido</label>
                     <div class="formulario__grupo_input">
                         <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Juán Pérez" class="formulario__input" style="text-align: center;" required>
@@ -53,7 +53,7 @@
             </div>
 
             <!--Grupo Usuario-->
-            <div class="formulario_grupo" id="grupo_usuario">
+            <div class="formulario__grupo" id="grupo__usuario">
                 <label for="usuario" class="formulario__label">Usuario</label>
                     <div class="formulario__grupo_input">
                         <input type="text" name="usuario" id="usuario" placeholder="Ejemplo: Juán1234" class="formulario__input" style="text-align: center;" required>
@@ -64,7 +64,7 @@
             
             
             <!--Grupo contraseña-->
-            <div class="formulario_grupo" id="grupo_password">
+            <div class="formulario__grupo" id="grupo__password">
                 <label for="password" class="formulario__label">Contraseña</label>
                     <div class="formulario__grupo_input">
                         <input type="password" name="password" id="password" class="formulario__input" style="text-align: center;" required>
@@ -75,17 +75,17 @@
                 
                 
             <!--Grupo contraseña 2-->            
-            <div class="formulario_grupo" id="grupo_password2">
+            <div class="formulario__grupo" id="grupo__password2">
                 <label for="password2" class="formulario__label">Repita la Contraseña</label>
                     <div class="formulario__grupo_input">
-                        <input type="password" name="password" id="password" class="formulario__input" style="text-align: center;" required>
+                        <input type="password" name="password" id="password2" class="formulario__input" style="text-align: center;" required>
                         <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input_error">Ambas contraseñas deben ser iguales.</p>
             </div>
             
             <!--Grupo email-->
-            <div class="formulario_grupo" id="grupo_correo">
+            <div class="formulario__grupo" id="grupo__correo">
                 <label for="correo" class="formulario__label">Correo Electrónico</label>
                 <div class="formulario__grupo_input">
                     <input type="email" name="correo" id="correo" placeholder="ejemplo@ejemplo.com" class="formulario__input" style="text-align: center;" required>
@@ -95,7 +95,7 @@
             </div>
 
             <!--Grupo telefono-->
-            <div class="formulario_grupo" id="grupo_telefono">
+            <div class="formulario_grupo" id="grupo__telefono">
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <div class="formulario__grupo_input">
                     <input type="tel" name="telefono" id="telefono" placeholder="358-4123456" class="formulario__input" style="text-align: center;" required>
@@ -104,45 +104,36 @@
                 <p class="formulario__input_error">La direccion de correo, solo puede contener letras, puntos, números, guión y guión bajo</p>
             </div>
                 
-        </form>    
-            
             <!--Grupo terminos-->
-            <div class="formulario__grupo" id="grupo_terminos">
-                <label class="formulario_label">
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
                     <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                    <p>Acepto los terminos y condiciones.</p>
+                    Acepto los terminos y condiciones.
                 </label>
 
             </div>
                 
             
-            <div class="formulario__mensaje" id="formulario__mensaje">
-                <p><i class="fa-solid fa-triangle-exclamation"></i><b>ERROR:</b> por favor, rellena el formulario correctamente.</p>
-            </div>    
-                
+            
+        
+        
             <div class="formulario__grupo formulario__grupo-btn">
-                <button type="submit" class="formulario__btn">Enviar</button>
-                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario ha sido eviado exitosamente.</p>
-            </div>
-                
-                
-                
+                    <input type="submit" class="formulario__btn" onclick="return enviarFormulario();" value="Registrarme">
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario ha sido eviado exitosamente.</p>
+                </div>
+                    
+        </form> 
 
-                
-        
-            <!--</div>
-
-            <input class="css-button-gradient--5" type="submit" value="Enviar">-->
-
-        
-
-
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i><b>ERROR:</b> por favor, rellena el formulario correctamente.</p>
+                        </div>   
+    
+    
     </fieldset>
 
-
-
-    <script src="../JS/formulario.js"></script>
-    <script src="https://kit.fontawesome.com/c559295418.js" crossorigin="anonymous"></script>
+        
+   <script src="../JS/formulario.js"></script>
+    
 
     <footer>
         <p class="direccion">
