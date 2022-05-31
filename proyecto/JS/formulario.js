@@ -1,8 +1,8 @@
 //datos personales
 
-var nombre = document.getElementById("nombre");
-var usuario = document.getElementById("usuario");
-var password = document.getElementById("password");
+var nombre = document.getElementById("");
+var usuario = document.getElementById("usuario__id");
+var password = document.getElementById("usuario__pass");
 var password2 = document.getElementById("password2");
 
 //Datos contacto
@@ -29,5 +29,7 @@ function enviarFormulario(){
 		mensajeError.push("Ingresa tu password");
 	}
 	
+		mensajeError.join(" ,");
+		
 	return false;
 }

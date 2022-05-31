@@ -30,7 +30,7 @@
         
     </header>
     
-    
+    <!--Banner-->
     <div class="banner">
         <img src="images/banner_final_final.png" alt="">
     </div>
@@ -44,31 +44,35 @@
 
             
         <div class="usr__data">
-            <label for="usuario__id">Usuario</label>
-            <input type="text" id="usuario__id" class="logIn__user" placeholder="Usuario" style="text-align: center;">
-        </div>
-
-          
-         <div class="usr__data"> 
-
-            <label for="usuario__pass" >Contraseña</label>
+            <label for="usuario__pass">Contraseña</label>
             <input type="password" id="usuario__pass" class="logIn__pass" placeholder="Contraseña" style="text-align: center;">
         </div>
-            
-        
-    
+
+        <div class="usr__data"> 
+
+            <label for="usuario__id" >Usuario</label>
+            <input type="text" id="usuario__id" class="logIn__user" placeholder="Usuario" style="text-align: center;">
+        </div>               
     </form>
 
-    <a href="html/turnos.html" class="reg__none">¿Aun no esta registrado?</a>
-<!--Presentacion-->
+    <!--Enviar y no registrado-->
+    <div class="send__form">
+        <input type="submit" id="enviar" class="enviar_form" value="Enviar">
+    </div>
+
+    <div class="reg__required">
+        <a href="html/turnos.html" class="reg__none">¿Aun no esta registrado?</a>
+    </div>
+    
+
+
+    <!--Presentacion-->
     <div class="presentacion_2">
         <p class="pres_2"> "Nuestra institución cuenta con equipamiento de ultima generacion y personal experto, capacitado para asegurar la maxima calidad en nuestros servicios. Porque en Clínica Regional Rio Cuarto, lo primero es usted."</p>
     </div>
     
     
     <main>
-        
-
         <ul class="prod">
             <li>
                 <a href="html/turnos.html">
@@ -96,12 +100,10 @@
 
           
         </ul>
-        
-        
-        
-
     </main>
     
+
+
     <footer>
         <p class="direccion">
             <ul class="dire">
@@ -126,5 +128,6 @@
 
     </footer>
     
+    <script src="JS/formulario.js"></script>
 </body>
 </html>
