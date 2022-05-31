@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="En">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,9 @@
 
 </head>
 <body>
+
+    <script src="JS/formulario.js"></script>
+    
     <header>
         <div class="head_1">
             <img src="images/Logo.png" alt="">
@@ -55,9 +58,13 @@
         </div>               
     </form>
 
+    <div id="error" style="color: red ;">
+
+    </div>
+
     <!--Enviar y no registrado-->
     <div class="send__form">
-        <input type="submit" id="enviar" class="enviar_form" value="Enviar">
+        <input type="submit" id="enviar" onclick="return enviarFormulario();" class="enviar_form" value="Enviar">
     </div>
 
     <div class="reg__required">
@@ -128,6 +135,6 @@
 
     </footer>
     
-    <script src="JS/formulario.js"></script>
+    
 </body>
 </html>
