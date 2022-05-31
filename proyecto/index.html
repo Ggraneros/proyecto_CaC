@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <script src="JS/formulario.js"></script>
+    <script src="JS/validar.js"></script>
     
     <header>
         <div class="head_1">
@@ -43,29 +43,32 @@
     </div>
 
 <!--Ingreso de usuario-->
-    <form action="" class="loguear">
+    <form action="" class="loguear" onsubmit="return validar()";>
 
-            
-        <div class="usr__data">
-            <label for="usuario__pass">Contraseña</label>
-            <input type="password" id="usuario__pass" class="logIn__pass" placeholder="Contraseña" style="text-align: center;">
+            <div class="usr__data">
+                <label for="usuario" >Usuario</label>
+                <input type="text" id="usuario" class="logIn__user" placeholder="Usuario" style="text-align: center;">
+            </div>   
+
+            <div class="usr__data">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" class="logIn__pass" placeholder="Contraseña" style="text-align: center;">
+            </div>
+   
+
+        <!--Boton enviar-->
+        <div class="send__form">
+            <input type="submit" id="enviar" class="enviar_form" value="Enviar" >
         </div>
-
-        <div class="usr__data"> 
-
-            <label for="usuario__id" >Usuario</label>
-            <input type="text" id="usuario__id" class="logIn__user" placeholder="Usuario" style="text-align: center;">
-        </div>               
+    
+    
     </form>
 
-    <div id="error" style="color: red ;">
-
-    </div>
+    
+    
 
     <!--Enviar y no registrado-->
-    <div class="send__form">
-        <input type="submit" id="enviar" onclick="return enviarFormulario();" class="enviar_form" value="Enviar">
-    </div>
+    
 
     <div class="reg__required">
         <a href="html/turnos.html" class="reg__none">¿Aun no esta registrado?</a>
@@ -137,4 +140,4 @@
     
     
 </body>
-</html>
+</html>AR
