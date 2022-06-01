@@ -13,6 +13,9 @@
 
 </head>
 <body>
+
+    <script src="../JS/formulario.js"></script>
+
     <header>  <!--Botonera nav-->
         <div class="head_1">
             <img src="../images/Logo.png" alt="">
@@ -46,7 +49,7 @@
             <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="formulario__label">Nombre y Apellido</label>
                     <div class="formulario__grupo_input">
-                        <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Juán Pérez" class="formulario__input" style="text-align: center;" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Juán Pérez" class="formulario__input" style="text-align: center;" >
                         <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input_error">El nombre y apellido solo puede contener letras.</p>
@@ -56,7 +59,7 @@
             <div class="formulario__grupo" id="grupo__usuario">
                 <label for="usuario" class="formulario__label">Usuario</label>
                     <div class="formulario__grupo_input">
-                        <input type="text" name="usuario" id="usuario" placeholder="Ejemplo: Juán1234" class="formulario__input" style="text-align: center;" required>
+                        <input type="text" name="usuario" id="usuario" placeholder="Ejemplo: Juán1234" class="formulario__input" style="text-align: center;" >
                         <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input_error">El usuario debe de 4 a 16 dígitos y solo puede tener números, letras y guión bajo.</p>
@@ -65,9 +68,9 @@
             
             <!--Grupo contraseña-->
             <div class="formulario__grupo" id="grupo__password">
-                <label for="password" class="formulario__label">Contraseña</label>
+                <label for="contraseña" class="formulario__label">Contraseña</label>
                     <div class="formulario__grupo_input">
-                        <input type="password" name="password" id="password" class="formulario__input" style="text-align: center;" required>
+                        <input type="password" name="password" id="contraseña" class="formulario__input" style="text-align: center;" >
                         <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input_error">La contraseña debe contener entre 6 y 12 dígitos.</p>
@@ -76,9 +79,9 @@
                 
             <!--Grupo contraseña 2-->            
             <div class="formulario__grupo" id="grupo__password2">
-                <label for="password2" class="formulario__label">Repita la Contraseña</label>
+                <label for="contraseña2" class="formulario__label">Repita la Contraseña</label>
                     <div class="formulario__grupo_input">
-                        <input type="password" name="password" id="password2" class="formulario__input" style="text-align: center;" required>
+                        <input type="password" name="password" id="contraseña2" class="formulario__input" style="text-align: center;" >
                         <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input_error">Ambas contraseñas deben ser iguales.</p>
@@ -88,7 +91,7 @@
             <div class="formulario__grupo" id="grupo__correo">
                 <label for="correo" class="formulario__label">Correo Electrónico</label>
                 <div class="formulario__grupo_input">
-                    <input type="email" name="correo" id="correo" placeholder="ejemplo@ejemplo.com" class="formulario__input" style="text-align: center;" required>
+                    <input type="email" name="correo" id="correo" placeholder="ejemplo@ejemplo.com" class="formulario__input" style="text-align: center;" >
                     <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
                 </div>
                 <p class="formulario__input_error">La direccion de correo, solo puede contener letras, puntos, números, guión y guión bajo</p>
@@ -98,7 +101,7 @@
             <div class="formulario_grupo" id="grupo__telefono">
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <div class="formulario__grupo_input">
-                    <input type="tel" name="telefono" id="telefono" placeholder="358-4123456" class="formulario__input" style="text-align: center;" required>
+                    <input type="tel" name="telefono" id="telefono" placeholder="358-4123456" class="formulario__input" style="text-align: center;" >
                     <i class="formulario__validacion_estado fa-solid fa-circle-xmark"></i>
                 </div>
                 <p class="formulario__input_error">La direccion de correo, solo puede contener letras, puntos, números, guión y guión bajo</p>
@@ -114,9 +117,7 @@
             </div>
                 
             
-            
-        
-        
+            <!--Boton de enviar-->
             <div class="formulario__grupo formulario__grupo-btn">
                     <input type="submit" class="formulario__btn" onclick="return enviarFormulario();" value="Registrarme">
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario ha sido eviado exitosamente.</p>
