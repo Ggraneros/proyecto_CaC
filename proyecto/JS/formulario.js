@@ -7,8 +7,7 @@ var contraseña2 = document.getElementById("contraseña2");
 var correo = document.getElementById("correo");
 var telefono = document.getElementById("telefono");
 
-//Expresiones regulares
-expresion = /\w+@+\w+\.+[a-z]/;
+
 
 
     if(nombre.value === "" || null) {
@@ -47,19 +46,17 @@ expresion = /\w+@+\w+\.+[a-z]/;
         alert("El campo CORREO ELECTRONICO no puede quedar en blanco.");
         return false;
     }
-        else if(!expresion.test(correo)); {
-            alert("El campo CORREO no esta escrito en un formato válido.");
-            return false;
-        }
+        
     
     if(telefono.value === "" || null) {
         alert("El campo REPETIR CONTRASEÑA no puede quedar en blanco.");
         return false;
     }
-        else if(isNaN(telefono)) {
-            alert("El campo TELÉFONO debe ser llenado solamente con números.")
-            return false;
-        }
+    
+    if(isNaN(telefono.value)) {
+        alert("El campo TELÉFONO debe ser llenado solamente con números.")
+        return false;
+    }
 
 
 
